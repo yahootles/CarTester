@@ -11,10 +11,12 @@ package cartester;
  */
 public class Car {
 
+    //variables
     private String make, model, hornSound, colour;
     private int year;
     private double price;
 
+    //default constructor - makes random car
     public Car() {
         make = Math.round(Math.random() * 3) == 0 ? "Ford" : Math.round(Math.random() * 2) == 0 ? "Toyota" : "GMC";
         switch (make) {
@@ -35,6 +37,7 @@ public class Car {
         price = Math.random()*15000+1000;
     }
     
+    //all variables are parameters
     public Car(String clr, int yr, String mk, String mdl, String hrnSnd, int prc) {
         colour = clr;
         year = yr;
